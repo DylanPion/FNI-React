@@ -1,0 +1,90 @@
+.tresoryTable {
+  position: absolute;
+  width: calc(100% - 250px);
+  margin-top: 120px;
+  left: 250px;
+  transition: all 0.3s ease;
+  background-color: var(--light);
+  padding: 20px;
+  border-radius: 15px;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .btn-modal {
+    background-color: var(--primary);
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .btn-modal:hover {
+    background-color: #0476f1;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: left;
+    padding: 10px;
+  }
+  th {
+    font-size: 14px;
+  }
+  th,
+  td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  th {
+    background-color: #ea4763;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+
+  .associationTable td i {
+    margin-right: 5px;
+    color: #007bff;
+    cursor: pointer;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .total td {
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,48 @@
+.info-card {
+  // position: absolute;
+  // margin-top: 120px;
+  // left: 250px;
+  // width: calc(100% - 270px);
+
+  button {
+    border-radius: 10px 10px 0 0;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: white;
+  }
+
+  button:hover {
+    text-decoration: underline;
+  }
+
+  .tab-button-one {
+    background-color: #7bae8b;
+  }
+  .tab-button-two {
+    background-color: #ea4f63;
+  }
+  .tab-button-tree {
+    background-color: #faba64;
+  }
+
+  .tab-content {
+    background-color: var(--light);
+    padding: 20px;
+    border-radius: 0 15px 15px 15px;
+    transition: all 0.3s ease;
+    ul li {
+      list-style-type: none;
+      font-weight: 600;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.info-card .tab-content ul li span {
+  font-weight: normal !important;
+}

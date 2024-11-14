@@ -1,0 +1,94 @@
+.sidebar {
+  position: fixed;
+  top: 80;
+  left: 0;
+  background: var(--light);
+  width: 230px;
+  height: 100%;
+  margin-top: 80px;
+  z-index: 999;
+  scrollbar-width: none;
+  transition: all 0.3s ease;
+
+  .side-menu {
+    width: 100%;
+    margin-top: 48px;
+  }
+
+  .side-menu li {
+    height: 48px;
+    background: transparent;
+    margin-left: 6px;
+    border-radius: 48px 0 0 48px;
+    padding: 4px;
+  }
+
+  .side-menu li a {
+    width: 100%;
+    height: 100%;
+    background: var(--light);
+    display: flex;
+    align-items: center;
+    border-radius: 48px;
+    font-size: 16px;
+    color: var(--dark);
+    white-space: nowrap;
+    overflow-x: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .side-menu li a .bx {
+    min-width: calc(60px - ((4px + 6px) * 2));
+    display: flex;
+    font-size: 1.6rem;
+    justify-content: center;
+  }
+
+  .side-menu li a:hover {
+    background: #d7d7d7;
+  }
+
+  .side-menu li a.logout {
+    color: var(--danger);
+  }
+
+  .newButton {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 5px;
+    color: var(--light);
+    font-weight: 500;
+    border: none;
+    border-radius: 36px;
+    background: var(--primary);
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+  }
+
+  .newButton:hover {
+    background: var(--primary-hover);
+  }
+
+  .newButton i {
+    font-size: 28px;
+  }
+
+  .newButton span {
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  .sidebar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .active {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+}

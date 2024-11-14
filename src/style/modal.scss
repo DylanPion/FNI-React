@@ -1,0 +1,163 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  border-radius: 8px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 40px 32px;
+  max-width: 700px;
+  width: 80%;
+
+  .modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  label {
+    color: #1d1d1d;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.03rem;
+    display: block;
+    margin-top: 12px;
+  }
+
+  .radio {
+    display: flex;
+    margin-top: 12px;
+
+    div {
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+
+      input {
+        margin-right: 8px;
+        width: auto;
+        height: auto;
+      }
+
+      label {
+        margin: 0;
+        font-size: 16px;
+        font-weight: normal;
+        cursor: pointer;
+      }
+    }
+  }
+
+  input,
+  select {
+    color: #1d1d1d;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    height: 46px;
+    letter-spacing: 0.03rem;
+    border: 1px solid #1d1d1d;
+    background: transparent;
+    outline: none;
+    border-radius: 8px;
+    text-indent: 20px;
+    margin-top: 8px;
+    transition: all 0.3s ease;
+  }
+
+  input[type="date"] {
+    text-indent: 10px;
+  }
+
+  input:focus {
+    border-color: var(--primary);
+  }
+
+  button {
+    width: 100%;
+    margin-top: 20px;
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    line-height: 50px;
+    font-size: 18px;
+    letter-spacing: 0.025em;
+    cursor: pointer;
+    font-weight: 800;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+  }
+
+  button:hover {
+    background: var(--primary);
+    transform: scale(1.1);
+  }
+
+  i {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    font-size: 1.9rem;
+    transform: rotate(45deg);
+    cursor: pointer;
+  }
+
+  i:hover {
+    color: var(--primary);
+  }
+
+  .amount-date-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; // Espace entre les deux champs
+
+    div {
+      flex: 1; // Chaque div prendra une largeur égale
+    }
+  }
+
+  .date-range {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; // Espace entre les deux champs de date
+
+    div {
+      flex: 1; // Chaque div prendra une largeur égale
+    }
+  }
+}
+
+.deleteModal {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+  button {
+    width: 200px;
+  }
+  button:first-child {
+    background-color: #1976d2;
+  }
+  button:first-child:hover {
+    background-color: #d32f2f;
+  }
+  button:nth-child(2) {
+    background-color: transparent;
+    color: #1976d2;
+  }
+  button:nth-child(2):hover {
+    color: white;
+    background-color: #1976d2;
+  }
+}
+
+.error-message {
+  display: block;
+  color: red;
+  padding-top: 10px;
+  padding-left: 5px;
+}

@@ -1,0 +1,22 @@
+.pagination-controls {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.pagination-controls button {
+  padding: 10px 15px;
+  border: none;
+  background-color: var(--primary);
+  color: white;
+  cursor: pointer;
+}
+
+.pagination-controls button:hover {
+  background-color: var(--primary-hover);
+}
+
+.pagination-controls button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
